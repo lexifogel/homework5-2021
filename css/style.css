@@ -84,13 +84,14 @@ nav a:hover {
 
   /* Requirement 3a code here*/
   position: relative;
-  top: -10px;
+  top: -40px;
   visibility: hidden;
 }
 
 /* Requirement 3b code here*/
 .skip a:focus {
   position: relative;
+  top: 0px;
   visibility: visible;
 }
 
@@ -186,7 +187,7 @@ nav a:hover {
 
     /* want just one align property !! */
     padding: 0px 0px;
-    /* position: absolute; ? */ 
+    /* position: absolute; ?? -- check requirement 9 */ 
 
   }
 
@@ -205,13 +206,12 @@ nav a:hover {
    grid-template-rows: repeat(5, 400px);
   }
 
-  
-
-  .about-image {
-    grid-column: 2 / span 2;
-  }
 
   .about {
+    grid-column: 3 / span 2;
+  }
+
+  .clients {
     grid-column: 3 / span 2;
   }
 
@@ -219,25 +219,25 @@ nav a:hover {
     grid-column: 3 / span 2;
   }
 
-  .method {
-   grid-column: 2 / span 2;
-  }
-
-  .clients-image {
-    grid-column: 2 / span 2;
-  }
-
-  .clients {
-    grid-column: 3 / span 2;
-  }
-
   .contact-image {
     grid-column: 3 / span 2;
   }
 
+  .method {
+    grid-column: 2 / span 2;
+   }
+ 
   .contact {
     grid-column: 2 / span 2;
   }
+
+  .about-image {
+    grid-column: 2 / span 2;
+  }
+  
+  .clients-image {
+     grid-column: 2 / span 2;
+   }
 
 }
 
