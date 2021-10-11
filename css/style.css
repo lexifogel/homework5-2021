@@ -101,143 +101,143 @@ nav a:hover {
 }
 
 
-@media screen and (max-width: 750px) {
 
-  .container{
-    /* Requirement 5 code here*/
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: repeat(5, auto);
-    row-gap: 15px;
-  }
+.container{
+  /* Requirement 5 code here*/
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  row-gap: 15px;
+}
 
-  /* Remainder of requirements here: */
+/* Remainder of requirements here: */
 
-  header{
-    background-attachment: fixed; /* Parallax effect */
-    background-position: center; /* Parallax effect */
-    background-size: cover; /* Parallax effect */
-    color: white;
-    height: 400px; /* Parallax effect */
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: white;
+  height: 400px; /* Parallax effect */
 
-    /* YOUR CODE HERE; */
-    grid-column: 1 / -1;
-    grid-row: 1 / span 1;
+  /* YOUR CODE HERE; */
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
 
-    background-image: url('../images/header.jpg');
-    background-repeat: no-repeat;
-  }
+  background-image: url('../images/header.jpg');
+  background-repeat: no-repeat;
+}
 
 
 
-  .about{
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-  }
+.about{
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
 
-  .method{
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
-  }
+.method{
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
 
-  /* You need to write some of your own selectors here */
-  .clients {
-    grid-column: 2 / span 1;
-    grid-row: 4 / span 1;
-  }
+/* You need to write some of your own selectors here */
+.clients {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
 
-  .contact {
-    grid-column: 2 / span 1;
-    grid-row: 5 / span 1;
-  }
+.contact {
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 1;
+}
 
-  .about-image {
-   grid-column: 1 / -1;
-   grid-row: 2 / span 1;
-   max-height: 700px;
-   overflow: hidden;
-  }
+.about-image {
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+  max-height: 700px;
+  overflow: hidden;
+}
 
-  .method-image {
-   grid-column: 1 / -1;
-   grid-row: 3 / span 1;
-   max-height: 700px;
-   overflow: hidden;
-  }
+.method-image {
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
+  max-height: 700px;
+  overflow: hidden;
+}
 
-  .clients-image {
-    grid-column: 1 / -1;
-    grid-row: 4 / span 1;
-    max-height: 700px;
-    overflow: hidden;
-  }
+.clients-image {
+  grid-column: 1 / -1;
+  grid-row: 4 / span 1;
+  max-height: 700px;
+  overflow: hidden;
+}
 
-  .contact-image {
-    grid-column: 1 / -1;
-    grid-row: 5 / span 1;
-    max-height: 700px;
-    overflow: hidden;
-  }
+.contact-image {
+  grid-column: 1 / -1;
+  grid-row: 5 / span 1;
+  max-height: 700px;
+  overflow: hidden;
+}
 
-  .text-block{
-    background-color: rgba(255, 255, 255, .8);
-    border: 10px solid black;
-    padding: 30px;
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
 
-    /* Your code here */
-
-    /* want just one align property !! */
-    padding: 0px 0px;
-    /* position: absolute; ?? -- check requirement 9 */ 
-
-  }
+  /* Your code here */
+  /* want just one align property !! */
+  align-self: center;
+  /* position: absolute; ?? -- check requirement 9 */ 
 
 }
 
+
 @media screen and (min-width: 800px){
-  nav{
-    padding: 30px 0;
 
-    /* Your code here */
-    text-align: right; /* ??? */
+nav{
+  padding: 30px 0;
+
+  /* Your code here */
+  text-align: right; /* ??? */
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 50px auto 500px auto 50px;
+  grid-template-rows: repeat(5, 400px);
+}
+
+
+.about {
+  grid-column: 3 / span 2;
+}
+
+.clients {
+  grid-column: 3 / span 2;
+}
+
+.method-image {
+  grid-column: 3 / span 2;
+}
+
+.contact-image {
+  grid-column: 3 / span 2;
+}
+
+.method {
+  grid-column: 2 / span 2;
   }
 
-  .container{
-   grid-template-columns: 50px auto 500px auto 50px;
-   grid-template-rows: repeat(5, 400px);
-  }
+.contact {
+  grid-column: 2 / span 2;
+}
 
+.about-image {
+  grid-column: 2 / span 2;
+}
 
-  .about {
-    grid-column: 3 / span 2;
-  }
-
-  .clients {
-    grid-column: 3 / span 2;
-  }
-
-  .method-image {
-    grid-column: 3 / span 2;
-  }
-
-  .contact-image {
-    grid-column: 3 / span 2;
-  }
-
-  .method {
+.clients-image {
     grid-column: 2 / span 2;
-   }
- 
-  .contact {
-    grid-column: 2 / span 2;
   }
-
-  .about-image {
-    grid-column: 2 / span 2;
-  }
-  
-  .clients-image {
-     grid-column: 2 / span 2;
-   }
 
 }
 
